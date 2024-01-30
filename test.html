@@ -1,0 +1,370 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plats</title>
+    <!-- Ajout des liens Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+/* GLOBAL CSS */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        h1 {
+            font-size: 3.6rem;
+        }
+
+        h2 {
+            font-size: 4.8rem;
+            font-family: "Pacifico", cursive;
+
+        }
+
+        h3 {
+            font-size: 3rem;
+            font-weight: normal;
+            font-family: "Pacifico", cursive;
+
+        }
+
+        h4,
+        h5 {
+            font-size: 2.8rem;
+        }
+
+        li {
+            font-size: 2rem;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #ECF0F1;
+        }
+
+        /* HEADER */
+
+        .main-head {
+            color: #000000;
+            
+        }
+
+        nav {
+            min-height: 10vh;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            padding: 2rem;
+            min-height: 10vh;
+        }
+
+        nav ul {
+            display: flex;
+            flex: 1 1 40rem;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+        
+        
+
+        ul li{
+            list-style-type: none;
+            display: inline-block;
+            transition: 0.7s ease;
+        }
+        ul li:hover{
+            background-color: #3498DB;
+            padding: 10px;
+            border-radius: 30px  ;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #000000;
+            padding: 30px;
+            font-family: "Pacifico", cursive;
+            font-weight: bold;
+
+        }
+
+
+        #logo {
+            flex: 2 1 40rem;
+            font-family: "Pacifico", cursive;
+            font-weight: normal;
+        }
+        /* ... (Your existing header styles) */
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            border-radius: 0 0 10px 10px;
+            }
+        .submenu:hover > ul {
+            display: block;
+            border-radius: 30px  ;
+            
+        }
+
+        .submenu {
+            position: relative;
+        }
+
+        .submenu a {
+            padding: 15px 30px;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        
+
+        .submenu ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        .submenu ul li {
+            width: 100%;
+            float: none;
+            display: list-item;
+        }
+
+        .submenu ul a {
+            padding: 15px 30px;
+            color: #000000;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        .submenu:hover ul {
+            display: block;
+        }   
+
+        .logo-container {
+           display: flex;
+         align-items: center;
+          }     
+
+          .main-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 20px;
+            font-family: "Pacifico", cursive;
+        }
+
+        /* Nouveau style pour la grille */
+        .destination-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card{
+            background-color: #237aad3c; /* Remplacez la couleur par celle de votre choix */
+             color: #FFFFFF; /* Couleur du texte */
+             padding: 10px; /* Espacement intérieur */
+             border-radius: 10px; /* Bord arrondi si nécessaire */
+        }
+
+    
+        .card-title,
+        .card-text {
+             background-color: #85a2b6; /* Remplacez la couleur par celle de votre choix */
+             color: #FFFFFF; /* Couleur du texte */
+             padding: 10px; /* Espacement intérieur */
+             border-radius: 10px; /* Bord arrondi si nécessaire */
+                 }
+
+     .btn-primary {
+        background-color: #ffffff; /* Remplacez la couleur par celle de votre choix */
+        border-color: #000000; /* Couleur de la bordure (si nécessaire) */
+        color: #000000; /* Couleur du texte */
+        border-radius: 20px;     
+          }
+     .btn-primary:hover{
+       background-color: #328492; /* Remplacez la couleur par celle de votre choix */
+       border-color: #ffffff; /* Couleur de la bordure (si nécessaire) */
+       color: #ffffff; /* Couleur du texte */
+        }
+
+
+    </style>
+
+    
+</head>
+
+<body>
+
+    
+    <header class="main-head">
+        <nav>
+            <h1 id="logo">MOROCCO</h1>
+            <ul>
+                <li class="submenu"><a href="abcdef.html">Accueil</a>
+
+                <li class="submenu"><a href="places.html">Destinations</a>
+                    <ul class="submenu">
+                        <li><a href="marrakx.html">Marrackech</a></li>
+                        <li><a href="fes.html">Fes</a></li>
+                        <li><a href="chaoun.html">Chefchaouen</a></li>
+                        <li><a href="agad.html">Agadir</a></li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="cuisine.html">Cuisine</a>
+                    <ul class="submenu">
+                        <li><a href="test.html">Côtière </a></li>
+                        <li><a href="test.html">Du Rif</a></li>
+                        <li><a href="test.html">Sahara</a></li>
+                        <li><a href="test.html">Berbère</a></li>
+                    </ul>
+                <li class="submenu"><a href="culture.html">Culture</a></li>
+
+                <li class="submenu"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br><br><br><br><br><br>
+    <div class="main-title">
+        <h2>Les Délices de la Cuisine Marocaine</h2>
+    </div>
+    <br><br><br>
+    <!-- Conteneur de la grille des destinations avec des cartes Bootstrap -->
+    <div class="container destination-container">
+
+
+        <div class="card">
+            <img src="r1.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Fruit de mer </h5>
+                <p class="card-text">La Pastilla au poisson et aux fruits de mer est tout aussi commune que la version classique au Maroc</p>
+                <a href="raconter.html" class="btn btn-primary" >Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r2.jpg" class="card-img-top" >
+            <div class="card-body"><br><br>
+                <h5 class="card-title">Tajine de poissons</h5>
+                <p class="card-text">Le tajine de poisson est un plat emblématique de la cuisine marocaine</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r3.jpg" class="card-img-top" >
+            <div class="card-body"><br><br>
+                <h5 class="card-title">Chermoula</h5>
+                <p class="card-text">La charmoula, également orthographiée chermoula, est une sauce marocaine très parfumée utilisée comme marinade pour le poisson</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r4.webp" class="card-img-top">
+            <div class="card-body"><br><br>
+                <h5 class="card-title">Céréales et  Légume</h5>
+                <p class="card-text">Les céréales et les légumes jouent un rôle essentiel dans la cuisine de cette région.</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r5.jpg" class="card-img-top">
+            <div class="card-body"><br><br><br>
+                <h5 class="card-title">Huil d'olive </h5>
+                <p class="card-text">
+                    L'huile d'olive marocaine est réputée pour sa qualité exceptionnelle et ses caractéristiques distinctives.</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r4.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Couscous du rif</h5>
+                <p class="card-text">Le couscous du Rif peut être préparé avec différentes variétés de légumes de saison, souvent cultivés localement.</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r10.jpg" class="card-img-top">
+            <div class="card-body"><br><br><br><br>
+                <h5 class="card-title"> Bissara</h5>
+                <p class="card-text">
+                    La Bissara est une soupe marocaine traditionnelle, généralement à base de pois cassés.</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r6.webp" class="card-img-top">
+            <div class="card-body"><br><br><br><br>
+                <h5 class="card-title">Couscous du sahara</h5>
+                <p class="card-text">En raison des conditions climatiques arides du Sahara, le couscous du Sahara peut être adapté aux ingrédients disponibles dans la région.</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r7.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Viande Séchée</h5>
+                <p class="card-text">La viande est coupée en fines tranches ou en lanières pour faciliter le processus de séchage.</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="rfisa.webp" class="card-img-top">
+            <div class="card-body"><br><br>
+                <h5 class="card-title">Rfissa </h5>
+                <p class="card-text">La Rfissa est un plat traditionnel marocain, réputé pour sa saveur riche et son importance culturelle</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r8.jpeg" class="card-img-top">
+            <div class="card-body"><br><br>
+                <h5 class="card-title">Huile d'Argan</h5>
+                <p class="card-text">L'huile d'argan est extraite des noix d'argan. Traditionnellement, les noix sont récoltées, séchées et décortiquées à la main par les femmes berbères.</p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="r9.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Omelette Berbère</h5>
+                <p class="card-text">L'omelette berbère, également connue sous le nom d'"Amazigh omelette" en référence au peuple berbère, est une délicieuse préparation qui reflète la cuisine traditionnelle du Maroc. </p>
+                <a href="raconter.html" class="btn btn-primary">Commenter</a>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+</html>

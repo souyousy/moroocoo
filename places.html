@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <style>
+/* GLOBAL CSS */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        h1 {
+            font-size: 3.6rem;
+        }
+
+        h2 {
+            font-size: 4.8rem;
+            font-family: "Pacifico", cursive;
+
+        }
+
+        h3 {
+            font-size: 3rem;
+            font-weight: normal;
+            font-family: "Pacifico", cursive;
+
+        }
+
+        h4,
+        h5 {
+            font-size: 2.8rem;
+        }
+
+        li {
+            font-size: 2rem;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        /* HEADER */
+
+        .main-head {
+            color: #000000;
+            
+        }
+
+        nav {
+            min-height: 10vh;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            padding: 2rem;
+            min-height: 10vh;
+        }
+
+        nav ul {
+            display: flex;
+            flex: 1 1 40rem;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+        
+        
+
+        ul li{
+            list-style-type: none;
+            display: inline-block;
+            transition: 0.7s all;
+        }
+        ul li:hover{
+            background-color: rgb(20, 188, 28);
+            padding: 10px;
+            border-radius: 30px  ;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #000000;
+            padding: 30px;
+            font-family: "Pacifico", cursive;
+            font-weight: bold;
+
+        }
+
+
+        #logo {
+            flex: 2 1 40rem;
+            font-family: "Pacifico", cursive;
+            font-weight: normal;
+        }
+        /* ... (Your existing header styles) */
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            border-radius: 0 0 10px 10px;
+            }
+        .submenu:hover > ul {
+            display: block;
+            border-radius: 30px  ;
+            
+        }
+
+        .submenu {
+            position: relative;
+        }
+
+        .submenu a {
+            padding: 15px 30px;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        
+
+        .submenu ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        .submenu ul li {
+            width: 100%;
+            float: none;
+            display: list-item;
+        }
+
+        .submenu ul a {
+            padding: 15px 30px;
+            color: #000000;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        .submenu:hover ul {
+            display: block;
+        }  
+
+/* 00000 */
+
+        .container {
+            margin: 0 auto;
+            overflow: hidden;
+            
+        }
+
+        
+
+        .destination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #fa2e17b6;
+            margin: 20px;
+            box-shadow: 10px 10px 10px rgba(7, 22, 1, 0.505);
+            border-radius: 12px;
+
+        }
+
+        .description {
+            text-align: justify;
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .description h2 {
+            color: #000000;
+            font-size: 27px;
+            font-family: 'Arial';
+
+        }
+
+        .description p {
+            color: #000000;
+            font-size: 15px;
+            font-family: 'Arial';
+        }
+
+        .image {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+       
+
+/* 11111111 */
+
+    .container1 {
+        margin: 0 auto;
+        overflow: hidden;
+        
+    }
+
+    .destination1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color: #D2B48C;
+        margin: 20px;
+        box-shadow: 10px 10px 10px rgba(7, 22, 1, 0.505);
+        border-radius: 12px;
+
+    }
+
+    .description1 {
+        text-align: justify;
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .description1 h2 {
+        color: #ffffff;
+        font-size: 28px;
+        font-family: 'Garamond';
+
+    }
+
+    .description1 p {
+        color: #ffffff;
+        font-size: 18px;
+        font-family: 'Garamond';
+
+    }
+
+    .image1 {
+        flex: 1;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .image1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+
+    
+
+    /* 222222 */
+
+    .container2 {
+        /* max-width: 1200px; */
+        margin: 0 auto;
+        overflow: hidden;
+        
+    }
+
+    .destination2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color:#add8e6;
+        margin: 20px;
+        box-shadow: 10px 10px 10px rgba(7, 22, 1, 0.505);
+        border-radius: 12px;
+
+    }
+
+    .description2 {
+        text-align: justify;
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .description2 h2 {
+        color: #333;
+        font-size: 28px;
+        font-family: 'Lora', serif; /* Police d'écriture avec une touche élégante */
+
+
+    }
+
+    .description2 p {
+        color: #666;
+        font-size: 17px;
+        font-family: 'Lora', serif; /* Police d'écriture avec une touche élégante */
+    }
+
+    .image2 {
+        flex: 1;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .image2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+
+/* 333333 */
+    .container3 {
+        margin: 0 auto;
+        overflow: hidden;
+        
+    }
+
+    .destination3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color: #9985156a;
+        margin: 20px;
+        box-shadow: 10px 10px 10px rgba(7, 22, 1, 0.505);
+        border-radius: 12px;
+
+    }
+
+    .description3 {
+        text-align: justify;
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .description3 h2 {
+        color: #333;
+        font-size: 28px;
+        font-family: 'Montserrat';
+
+    }
+
+    .description3 p {
+        color: #666;
+        font-size: 17px;
+        font-family: 'Montserrat';
+    }
+
+    .image3 {
+        flex: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        
+    }
+
+    .image3 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .video-container {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .video-container video {
+            width: 70%;
+            height: auto;
+            border-radius: 8px;
+        }
+</style>
+</head>
+
+<body>
+
+    
+    <header class="main-head">
+        <nav>
+            <h1 id="logo">MOROCCO</h1>
+            <ul>
+                <li class="submenu"><a href="abcdef.html">Accueil</a>
+
+                <li class="submenu"><a href="places.html">Destinations</a>
+                    <ul class="submenu">
+                        <li><a href="marrakx.html">Marrackech</a></li>
+                        <li><a href="fes.html">Fes</a></li>
+                        <li><a href="chaoun.html">Chefchaouen</a></li>
+                        <li><a href="agad.html">Agadir</a></li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="cuisine.html">Cuisine</a>
+                    <ul class="submenu">
+                        <li><a href="test.html">Côtière </a></li>
+                        <li><a href="test.html">Du Rif</a></li>
+                        <li><a href="test.html">Sahara</a></li>
+                        <li><a href="test.html">Berbère</a></li>
+                    </ul>
+                <li class="submenu"><a href="culture.html">Culture</a></li>
+
+                <li class="submenu"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ <br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        
+        <div class="destination">
+            <div class="description">
+                <a href="marrakx.html">
+                <h2>Marrakech : La Perle du Sud</h2>
+                <br><br>
+                <p>Marrakech, surnommée "La Perle du Sud", est une ville emblématique du Maroc qui séduit les visiteurs par son mélange enivrant de tradition et de modernité. Nichée au pied des montagnes de l'Atlas, Marrakech offre un voyage dans le temps, où l'histoire ancienne et la vie contemporaine se rencontrent harmonieusement.</p>
+                <p>Au cœur de Marrakech se trouve la médina, un labyrinthe animé de ruelles étroites, de souks colorés et de places vivantes. La place Jemaa el-Fna, au centre de la médina, est un lieu emblématique où les conteurs, les musiciens, les charmeurs de serpents et les vendeurs créent une atmosphère vibrante et captivante.</p>
+                <p>Les jardins majestueux de Marrakech, tels que les Jardins de Majorelle et les Jardins de l'Agdal, offrent une échappée paisible du tumulte de la médina. Ornés de fontaines, de plantes exotiques et de pavillons artistiquement conçus, ces jardins reflètent la beauté et la sérénité de la culture marocaine.</p>
+                <p>Les palais historiques, tels que le Palais de la Bahia et le Palais El Badi, dévoilent l'opulence de l'architecture marocaine, avec leurs cours intérieures ornées, leurs azulejos complexes et leurs jardins luxuriants.</p>
+                <br><br>
+                <div class="video-container">
+                <video width="320" height="240" controls poster="mqdefault.jpg">
+                    <source src="marrakech-city-tour-l-morocco-video-walk4k-bmgomym4_0Ik2JvPd.mp4" >
+                    </video>
+                </div>    
+            </div>
+            <div class="image">
+              <img src="marrak.jpg" alt="Image de la destination">
+            </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container1">
+        <div class="destination1">
+            <div class="description1">
+                <a href="fes.html">
+                <h2>Fès : Une Ville Impériale au Charme Intemporel</h2>             
+                   <br><br>
+                <p>Fès, l'une des quatre villes impériales du Maroc, éblouit les visiteurs avec son patrimoine historique riche et son atmosphère médiévale. Nichée entre les montagnes du Rif et du Moyen Atlas, Fès a été fondée au VIIIe siècle et continue de captiver les voyageurs avec son charme intemporel.</p>
+                <p>La Médina de Fès, inscrite au patrimoine mondial de l'UNESCO, est l'une des plus grandes et des mieux préservées du monde arabe. Ses ruelles étroites, ses souks animés, ses échoppes artisanales et ses palais somptueux témoignent de siècles d'histoire et de culture.</p>
+                <p>La Médina de Fès-el-Bali, véritable dédale de ruelles sinueuses, de marchés vivants et de monuments historiques, transporte les visiteurs dans une époque révolue. Ses souks animés, où l'artisanat traditionnel est à l'honneur, créent une ambiance sensorielle unique.</p>
+                <p>Fès est une destination qui offre un voyage dans le temps, où l'artisanat, la spiritualité et l'hospitalité marocaine se rencontrent pour créer une expérience inoubliable. Son authenticité et son héritage en font un joyau culturel à découvrir.</p>
+                <br><br>
+                <div class="video-container">               
+                    <video width="320" height="240" controls poster="mqdefault2.jpg" >
+                    <source src="fez-morocco-a-journey-through-history-and-tradition_2VLTVV0Z.mp4">
+                    </video>
+                </div>    
+            </div>
+            <div class="image1">
+                <img src="fes.jpg" alt="Image de la destination">
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="destination2">
+            <div class="description2">
+                <a href="culture.html">
+                <h2>Chefchaouen : La Ville Bleue</h2>
+                <br><br>
+                <p>Chefchaouen est célèbre pour ses ruelles étroites et ses bâtiments peints en bleu et blanc, créant une atmosphère visuelle unique et apaisante. Nichée au pied des montagnes, la ville offre une évasion paisible loin de l'agitation des centres urbains.</p>
+                <p>Architecture Unique : Les maisons et les bâtiments de Chefchaouen sont peints dans des nuances variées de bleu, créant un tableau enchanteur qui se démarque de manière spectaculaire contre le fond des montagnes environnantes. Cette tradition remonte à la période de la Reconquista espagnole, lorsque les Juifs espagnols ont introduit cette pratique.</p>
+                <p>Ambiance Paisible : Chefchaouen offre une ambiance tranquille et relaxante, idéale pour les voyageurs cherchant à se détendre et à s'imprégner de la beauté naturelle. Les ruelles sinueuses invitent à la flânerie, et chaque coin de la ville semble être une toile artistique.</p>
+                <p>Culture et Artisanat : La ville abrite également une scène artistique florissante avec de nombreux ateliers d'artisans. Les visiteurs peuvent découvrir des produits artisanaux locaux tels que des tapis, des poteries et des tissus. Les marchés de Chefchaouen proposent une variété de produits uniques.</p>
+                <br><br>
+                <div class="video-container">
+                <video width="320" height="240" controls poster="mqdefault3.jpg" >
+                    <source src="chefchaouen-morocco-in-4k-mdyn-shfshaon-mn-alaaal_cxNPmiea.mp4"> 
+                    </video>
+                </div>    
+            </div>
+            <div class="image2">
+                <img src="chef.jpg" alt="Image de la destination">
+            </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container3">
+        <div class="destination3">
+            <div class="description3">
+                <a href="culture.html">
+                <h2>Agadir : Station Balnéaire sur la Côte Atlantique</h2>
+                <br><br>
+               <p>Située au sud-ouest du Maroc, Agadir est célèbre pour ses plages dorées s'étendant à perte de vue. La ville est une destination prisée pour les voyageurs en quête de soleil, de détente et d'une ambiance décontractée.</p>
+               <p>Plages Paradisiaques : Les plages d'Agadir, bordées par les eaux cristallines de l'Atlantique, offrent un cadre idyllique pour se prélasser au soleil, nager et participer à des sports nautiques.</p>
+               <p>Agadir incarne le mariage réussi entre le confort moderne et le charme authentique du Maroc. Que vous soyez amateur de plages, d'histoire ou de cuisine locale, Agadir vous accueille avec sa convivialité et son ambiance ensoleillée.</p>
+               <p>Agadir incarne le mariage réussi entre le confort moderne et le charme authentique du Maroc. Que vous soyez amateur de plages, d'histoire ou de cuisine locale, Agadir vous accueille avec sa convivialité et son ambiance ensoleillée.</p> 
+               <br><br>
+               <div class="video-container">
+               <video width="320" height="240" controls poster="mqdefault4.jpg" >
+                    <source src="agadir-city-tour-l-morocco-video-walk4k-travel_s02F9WX6.mp4">
+                    </video>
+               </div>    
+            </div>
+            <div class="image3">
+                <img src="Aga.jpg" alt="Image de la destination">
+            </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
